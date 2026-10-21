@@ -1,0 +1,71 @@
+:root {
+    --cor-fundo: #120914;       /* Roxo bem escuro/noturno */
+    --cor-principal: #241228;   /* Roxo fechado para o card principal */
+    --cor-secundaria: #3d1e43;  /* Roxo médio para os botões */
+    --cor-destaque: #e11d48;    /* Vermelho/Rosa intenso (cor de coração/destaque) */
+    --cor-texto: #fce7f3;       /* Rosa bem claro para leitura confortável */
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.caixa-principal {
+    background-color: var(--cor-principal);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(225, 29, 72, 0.2);
+}
+
+h1 {
+    color: var(--cor-destaque);
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.caixa-perguntas {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.caixa-alternativas {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+button {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+    border: 1px solid transparent;
+    border-radius: 12px;
+    padding: 14px 18px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--cor-destaque);
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(225, 29, 72, 0.4);
+}
+
+.texto-resultado {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #f472b6;
+}
